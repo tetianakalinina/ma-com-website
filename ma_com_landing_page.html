@@ -21,6 +21,23 @@
       --warn: #b45309;
       --danger: #b91c1c;
       --card: #ffffff;         /* white cards */
+      /* Prevent the Contacts card from stretching */
+#life.grid.two { 
+  align-items: start !important;
+}
+
+/* Compact contact list styles */
+.contacts .contact-list{ display:grid; gap:12px; }
+.contact-item{
+  display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
+  padding:12px 14px; border:1px solid rgba(2,32,71,.08);
+  border-radius:12px; background:var(--card);
+}
+.contact-item a{ font-weight:700; }
+.contact-item .sub{ color:var(--muted); font-size:.9rem; }
+.contact-item .arrow{ opacity:.6; }
+.contact-item:hover{ box-shadow:0 6px 16px rgba(2,32,71,.08); transform:translateY(-2px); transition:.18s ease; }
+
     }
     *{box-sizing:border-box}
     html,body{height:100%}
