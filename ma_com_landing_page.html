@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MA COM – Public & Corporate Communication | University of Milan</title>
+  <meta name="description" content="Master of Arts in Public and Corporate Communication (MA COM) at the University of Milan. Overview, curricula, admissions, student life, and useful links."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* UniMi-aligned light theme */
+      --bg: #ffffff;
+      --surface: #f6f8fb;      /* page background */
+      --text: #0f172a;         /* dark text */
+      --muted: #475569;        /* secondary text */
+      --accent: #003E7E;       /* UniMi blue */
+      --accent-2: #0059B3;     /* deeper blue */
+      --ok: #0f766e;
+      --warn: #b45309;
+      --danger: #b91c1c;
+      --card: #ffffff;         /* white cards */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--surface);}    
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1120px;margin-inline:auto;padding: clamp(16px, 3vw, 24px);}    
+    .nav{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(255,255,255,.9);border-bottom:1px solid rgba(2,32,71,.08);z-index:10}
+    .nav-inner{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center;color:var(--text);font-weight:700}
+    .brand img{width:28px;height:28px;border-radius:6px}
+    .menu{display:flex;gap:16px;flex-wrap:wrap}
+    .menu a{color:var(--text);opacity:.85;text-decoration:none;font-weight:600}
+    .menu a:hover{opacity:1;color:var(--accent)}
+
+    .hero{position:relative;isolation:isolate}
+    .hero .media{position:absolute;inset:0;background:url('imgs/sc_pol-10-cropped.jpg') center/cover no-repeat;filter:brightness(.85)}
+    .hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(255,255,255,.35), rgba(255,255,255,.6))}
+    .hero-content{position:relative;z-index:1;padding-block: min(16vh, 160px);}
+    .eyebrow{display:inline-block;padding:.25rem .5rem;border:1px solid rgba(2,32,71,.12);border-radius:999px;color:var(--text);font-size:.875rem;letter-spacing:.04em}
+    h1{margin:16px 0 8px;font-size: clamp(32px, 3.8vw, 56px);line-height:1.05;color:var(--text)}
+    .lead{color:var(--muted);max-width:64ch;font-size: clamp(16px, 2.2vw, 20px)}
+    .cta-row{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid rgba(2,32,71,.12);text-decoration:none;font-weight:700}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#ffffff}
+    .btn.ghost{color:var(--text)}
+
+    .strip{background:#ffffff;border-top:1px solid rgba(2,32,71,.06);border-bottom:1px solid rgba(2,32,71,.06)}
+    .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .fact{padding:18px;border-radius:16px;background:var(--card);border:1px solid rgba(2,32,71,.08)}
+    .kpi{font-size:32px;font-weight:800;color:var(--text)}
+    .kcap{color:var(--muted);font-size:.9rem}
+
+    section{scroll-margin-top:80px}
+    .grid{display:grid;gap:20px}
+    .two{grid-template-columns:1.2fr .8fr}
+    .three{grid-template-columns:repeat(3,1fr)}
+    .card{background:var(--card);border:1px solid rgba(2,32,71,.08);border-radius:18px;padding:20px}
+    h2{color:var(--text);font-size: clamp(24px, 2.6vw, 36px);margin:0 0 8px}
+    p{color:var(--text);line-height:1.7}
+    .muted{color:var(--muted)}
+    ul{color:var(--text);padding-left:1.1rem}
+    li{margin:.25rem 0}
+    .badge{display:inline-block;padding:.35rem .6rem;border-radius:999px;background:rgba(0,62,126,.08);color:var(--accent);font-weight:700;font-size:.8rem}
+
+    iframe{width:100%;height:min(56vw,420px);border:0;border-radius:16px}
+
+    .links a{display:inline-block;margin:.2rem .5rem .2rem 0;text-decoration:none}
+
+    .footer{margin-top:40px;padding:32px 0;border-top:1px solid rgba(2,32,71,.06);color:var(--muted)}
+
+    /* small screens */
+    @media (max-width: 800px){
+      .facts{grid-template-columns:1fr 1fr}
+      .two{grid-template-columns:1fr}
+      .three{grid-template-columns:1fr}
+    }
+    /* ===== Hero readability card ===== */
+.hero-card{
+  background: rgba(255,255,255,.78);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(2,32,71,.12);
+  border-radius: 20px;
+  padding: 20px 24px;
+  max-width: 860px;
+  box-shadow: 0 8px 24px rgba(2,32,71,.08);
+}
+.hero .overlay{
+  /* slightly stronger light overlay to calm the photo under text */
+  background: linear-gradient(180deg, rgba(255,255,255,.30), rgba(255,255,255,.55));
+}
+.hero-content{
+  padding-block: min(14vh, 140px); /* slightly tighter than before */
+}
+    /* ===== Section separation ===== */
+main > section{
+  padding-block: 28px;
+  border-top: 1px solid rgba(2,32,71,.08);
+}
+main > section:first-of-type{ border-top: 0; }
+
+.grid{ gap: 24px; }             /* a bit more breathing room */
+    /* ===== Balance the About + Video row ===== */
+.grid.two{ align-items: stretch; }   /* both cards same height */
+.card{ height: 100%; }
+
+aside.card{ display: flex; flex-direction: column; gap: 12px; }
+aside.card iframe{ height: 320px; }  /* ensures the video area fills space */
+
+
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top"><img alt="UniMi" src="https://www.unimi.it/themes/custom/unimi/assets/assets/images/logo-blue.svg"/> MA COM · Public & Corporate Communication</a>
+      <div class="menu">
+        <a href="#about">About</a>
+        <a href="#curricula">Curricula</a>
+        <a href="#apply">Apply</a>
+        <a href="#courses">Courses</a>
+        <a href="#life">Student life</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="media" aria-hidden="true"></div>
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="container hero-content">
+  <div class="hero-card">
+    <span class="eyebrow">Master of Arts · LM-59</span>
+    <h1>Shape how organisations communicate — and how publics respond.</h1>
+    <p class="lead">MA COM (Public & Corporate Communication) is a two-year, 120-ECTS programme in Milan that blends strategy, research and creative execution across corporate communication, marketing and social change.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#apply">Apply / How to enrol</a>
+      <a class="btn ghost" href="#manifesto">Programme guide (Manifesto)</a>
+    </div>
+  </div>
+</div>
+  </header>
+
+  <div class="strip">
+    <div class="container facts">
+      <div class="fact"><div class="kpi">120</div><div class="kcap">ECTS</div></div>
+      <div class="fact"><div class="kpi">2</div><div class="kcap">Years · Milan</div></div>
+      <div class="fact"><div class="kpi">IT / EN</div><div class="kcap">Teaching languages</div></div>
+      <div class="fact"><div class="kpi">Admission</div><div class="kcap">Limited, with test</div></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section id="about" class="grid two">
+      <div class="card">
+        <h2>About the programme</h2>
+        <p>MA COM prepares graduates for leadership roles in public, corporate and institutional communication. You will practise audience research, content strategy, data‑informed decision‑making and campaign design across digital and offline media.</p>
+        <ul>
+          <li>Hands‑on labs and seminars with practitioners</li>
+          <li>Opportunities for internships and research projects</li>
+          <li>Strong links with Milan’s media and corporate ecosystem</li>
+        </ul>
+        <div class="links">
+          <a class="badge" id="manifesto" href="https://com.cdl.unimi.it/en/programme">Official programme page</a>
+          <a class="badge" href="https://com.cdl.unimi.it/en/programme">ECTS & structure</a>
+          <a class="badge" href="#courses">Courses & syllabus</a>
+        </div>
+      </div>
+      <aside class="card">
+        <h3 style="margin-top:0;color:white">Programme presentation</h3>
+        <p class="muted">Short talk on Public & Corporate Communication from UniMi’s orientation event. (External video)</p>
+        <iframe title="Programme Presentation" src="https://video.unimi.it/embed/395?chapter=9" allowfullscreen></iframe>
+        <small class="muted">Source: University of Milan Video Portal · Chapter 9 “Public and Corporate Communication”.</small>
+      </aside>
+    </section>
+
+    <section id="curricula" class="grid three" style="margin-top:20px">
+      <div class="card">
+        <h2>Corporate Communication</h2>
+        <p class="muted">Strategy, internal/external comms, reputation, crisis, media relations.</p>
+      </div>
+      <div class="card">
+        <h2>Communication & Marketing</h2>
+        <p class="muted">Branding, consumer insights, digital marketing, analytics, campaign planning.</p>
+      </div>
+      <div class="card">
+        <h2>Social & Cultural Changes</h2>
+        <p class="muted">Public communication, policy, civic engagement, NGOs, social impact.</p>
+      </div>
+    </section>
+
+    <section id="apply" class="grid two" style="margin-top:20px">
+      <div class="card">
+        <h2>Admissions & How to apply</h2>
+        <p>Admission is limited with an entry test. Check deadlines and requirements and prepare your documents.</p>
+        <ul>
+          <li><a href="https://www.unimi.it/en/education/master-programme/public-and-corporate-communication-com" target="_blank" rel="noopener">Admissions page</a></li>
+          <li><a href="https://www.unimi.it/en/study/bachelor-and-master-study/degree-programme-enrolment/enrolment-masters-programme" target="_blank" rel="noopener">General enrolment guide</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Key documents</h2>
+        <ul>
+          <li><a href="https://com.cdl.unimi.it/en/programme#programme-description-and-other-documents">Programme description (Manifesto)</a></li>
+          <li><a href="https://com.cdl.unimi.it/sites/lb62/files/2023-04/MA-COM-Presentation-22-23.pdf" target="_blank">MA COM Presentation (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="courses" class="grid two" style="margin-top:20px">
+      <div class="card">
+        <h2>Courses & Syllabus</h2>
+        <p>Explore the educational plan, labs and language requirements. Build your study plan with guidance from the programme office.</p>
+        <ul>
+          <li><a href="https://com.cdl.unimi.it/en/courses/educational-plan">Educational plan</a></li>
+          <li><a href="https://com.cdl.unimi.it/en/courses/course-list-z">Course list A–Z</a></li>
+          <li><a href="https://com.cdl.unimi.it/en/courses/laboratories">Laboratories</a></li>
+          <li><a href="https://com.cdl.unimi.it/en/study/language-proficiency">Language proficiency</a></li>
+          <li><a href="https://com.cdl.unimi.it/en/study/schedules-and-course-timetable">Schedules & timetable</a></li>
+        </ul>
+      </div>
+      <aside class="card">
+        <h2>Testimonials</h2>
+        <p class="muted">Add 2–3 short quotes from current students or alumni here. Keep them specific and concrete.</p>
+      </aside>
+    </section>
+
+    <section id="life" class="grid two" style="margin-top:20px">
+      <div class="card">
+        <h2>Study in Milan – Location & Transport</h2>
+        <p>Teaching takes place mainly in the Social & Political Sciences area (Via Conservatorio 7). Milan’s metro, trams and buses make it easy to get around.</p>
+        <div class="grid">
+          <iframe title="Map – Via Conservatorio 7, Milano" loading="lazy" src="https://www.google.com/maps?q=Via+Conservatorio+7,+Milano&output=embed"></iframe>
+        </div>
+        <ul>
+          <li><a href="https://www.atm.it/" target="_blank" rel="noopener">ATM Milano – transport info</a></li>
+          <li><a href="https://www.google.com/maps/search/caf%C3%A8+near+Via+Conservatorio+7+Milano/" target="_blank" rel="noopener">Cafés near campus</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Contacts</h2>
+        <ul>
+          <li><a href="https://com.cdl.unimi.it/en/programme/contact-persons">Programme office & contact persons</a></li>
+          <li><a href="https://com.cdl.unimi.it/en/programme/teaching-staff">Teaching staff</a></li>
+          <li><a href="https://com.cdl.unimi.it/en/study/internship">Internships</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:20px" id="resources">
+      <h2>Useful quick links</h2>
+      <div class="links">
+        <a class="badge" href="https://com.cdl.unimi.it/en/study/study-abroad">Study abroad</a>
+        <a class="badge" href="https://com.cdl.unimi.it/en/study/graduating">Graduating</a>
+        <a class="badge" href="https://com.cdl.unimi.it/en/programme/places-and-facilities">Places & facilities</a>
+        <a class="badge" href="https://com.cdl.unimi.it/en/study/forms">Forms</a>
+        <a class="badge" href="https://com.cdl.unimi.it/en/programme/programme-quality">Programme quality</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>Unofficial student-made refactor of the MA COM landing page for coursework. Links point to official UniMi pages.</small>
+    </div>
+  </footer>
+</body>
+</html>
