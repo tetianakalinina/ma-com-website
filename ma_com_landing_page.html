@@ -27,17 +27,38 @@
 }
 
 /* Compact contact list styles */
-.contacts .contact-list{ display:grid; gap:12px; }
-.contact-item{
-  display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
-  padding:12px 14px; border:1px solid rgba(2,32,71,.08);
-  border-radius:12px; background:var(--card);
-}
-.contact-item a{ font-weight:700; }
-.contact-item .sub{ color:var(--muted); font-size:.9rem; }
-.contact-item .arrow{ opacity:.6; }
-.contact-item:hover{ box-shadow:0 6px 16px rgba(2,32,71,.08); transform:translateY(-2px); transition:.18s ease; }
-
+<div class="card contacts">
+  <h2>Contacts</h2>
+  <div class="contact-list">
+    <div class="contact-item">
+      <div>
+        <a href="https://com.cdl.unimi.it/en/programme/contact-persons" target="_blank" rel="noopener">
+          Programme office & contact persons
+        </a>
+        <div class="sub">Student desk, office hours, email.</div>
+      </div>
+      <span class="arrow">→</span>
+    </div>
+    <div class="contact-item">
+      <div>
+        <a href="https://com.cdl.unimi.it/en/programme/teaching-staff" target="_blank" rel="noopener">
+          Teaching staff
+        </a>
+        <div class="sub">Lecturers, office hours, contacts.</div>
+      </div>
+      <span class="arrow">→</span>
+    </div>
+    <div class="contact-item">
+      <div>
+        <a href="https://com.cdl.unimi.it/en/study/internship" target="_blank" rel="noopener">
+          Internships
+        </a>
+        <div class="sub">Opportunities, rules, contacts.</div>
+      </div>
+      <span class="arrow">→</span>
+    </div>
+  </div>
+</div>
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -245,7 +266,7 @@ MA COM · Public & Corporate Communication</a>
       </aside>
     </section>
 
-    <section id="life" class="grid two" style="margin-top:20px">
+    <section id="life" class="grid two"margin-top:20px; align-items:start">
       <div class="card">
         <h2>Study in Milan – Location & Transport</h2>
         <p>Teaching takes place mainly in the Social & Political Sciences area (Via Conservatorio 7). Milan’s metro, trams and buses make it easy to get around.</p>
